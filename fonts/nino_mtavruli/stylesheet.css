@@ -1,0 +1,22 @@
+@font-face {
+    font-family: 'BPG Nino Mtavruli';
+    src: url('BPGNinoMtavruli-Bold.woff2') format('woff2'),
+        url('BPGNinoMtavruli-Bold.woff') format('woff'),
+        url('BPGNinoMtavruli-Bold.ttf') format('truetype'),
+        url('BPGNinoMtavruli-Bold.svg#BPGNinoMtavruli-Bold') format('svg');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'BPG Arial';
+    src: url('BPGArial.woff2') format('woff2'),
+        url('BPGArial.woff') format('woff'),
+        url('BPGArial.ttf') format('truetype'),
+        url('BPGArial.svg#BPGArial') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
