@@ -1,0 +1,62 @@
+body {
+    background-image: url(https://img.freepik.com/free-vector/spring-floral-watercolor-background-vector-green-with-leaf-illustration_53876-126350.jpg?w=996&t=st=1669552567~exp=1669553167~hmac=9581cad6db0b7596cb97569dd3ba9b730567f4b0283407fd6fe4a5d65012f345);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.div-wrapper {
+    height: 500px;
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(201, 204, 204, 0.204);  
+
+}
+.div-wrapper:hover{
+    box-shadow: 0 0px 8px 0 rgb(0, 255, 187), 0 6px 20px 0 rgba(155, 57, 57, 0.19);
+}
+.left-div {
+    height: 400px;
+    max-width: 500px;
+    width: 100%;
+}
+.right-div {
+    /* background-color: rgb(26, 196, 23); */
+    height: 400px;
+    max-width: 500px;
+    width: 100%;
+    border-radius: 30px 0;
+}
+.frame {
+    border-radius: 30px 0;
+}
+.contact-img {
+    width: 100%;
+}
+.soc-media {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: 50%;
+    font-size: 50px;
+}
+.facebook:hover {
+    color: blue;
+    text-shadow: 2px 2px 0px rgb(0, 166, 255);
+}
+.instagram:hover {
+    color: red;
+    text-shadow: 2px 2px 0px rgb(242, 101, 101);  
+}
+.phone {
+    color: rgb(130, 86, 86);
+}
+.phone:hover{
+    text-shadow: 2px 2px 0px rgb(242, 101, 101); 
+}
+.mail:hover {
+    text-shadow: 2px 2px 0px red; 
+}
