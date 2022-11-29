@@ -1,15 +1,19 @@
 /* HEADER */
 a{
+    color: white;
     text-decoration: none;
 }
 
 .header {
+    padding-bottom: 90px;
     display: flex;
     margin: auto;
     justify-content: space-around;
     align-items: center;
 }
 .navigation-flex {
+    justify-content: flex-end;
+    position: fixed;
     display: flex;
     margin: 0 auto;
     margin-top: 65px;
@@ -22,6 +26,9 @@ a{
     
 }
 .navigacia {
+    height: 80px;
+    border-radius: 10px 5px 30px 5px;
+    background-color: rgba(0, 128, 0, 0.179);
     align-items: center;
     display: flex;
     justify-content: space-between;
@@ -29,9 +36,9 @@ a{
     /* max-width: 100%; */
     width: 1440px;
     margin: auto;
-    color: #a09de7;
 }
 .nav-ul {
+    justify-content: flex-end;
     display: flex;
     font-size: 20px;
     font-family: lato;
@@ -45,8 +52,47 @@ a{
 }
 .nav-li:hover {
     cursor: pointer;
-    background-color: rgba(115, 239, 38, 0.504);
     border-radius: 10px;
-    color: rgb(255, 255, 255);
     text-decoration: underline;
+    text-decoration-color: rgb(255, 0, 0);
+}
+
+
+.main-section {
+    margin-top: 40px;
+}
+.main-section h1 {
+    font-size: 40px;
+    font-family: ALK Life;
+    color: black;
+    margin-bottom: 50px;
+}
+.main-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+    margin: 0 auto;
+    width: 1000px;
+    height: 400px;
+    border: 3px;
+    border-style: solid;
+    border-color: coral;
+    border-radius: 30px;
+    background-color: rgba(0, 0, 255, 0);
+}
+.product-wrapper {
+    align-self: center;
+    align-items: center;
+    /* height: 200px; */
+}
+.product-wrapper img {
+    align-self: center;
+    height: 200px;
+}
+.product-wrapper p {
+    margin-top: 10px;
+    text-align: center;
+    width: 50px;
+    font-size: 10px;
 }

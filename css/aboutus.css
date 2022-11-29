@@ -22,6 +22,10 @@
 .paragrap span {
     font-weight: bold;
 }
-.w3-container {
+.container {
+    height: 30px;
     margin-top: 20px;
+}
+.Slides img {
+    height: 650px;
 }

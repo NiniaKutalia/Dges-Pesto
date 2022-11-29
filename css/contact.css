@@ -23,6 +23,13 @@ body {
     max-width: 500px;
     width: 100%;
 }
+.left-div h1{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: ALK Life;
+    color: rgb(255, 0, 0);
+    text-align: center;
+}
 .right-div {
     /* background-color: rgb(26, 196, 23); */
     height: 400px;
