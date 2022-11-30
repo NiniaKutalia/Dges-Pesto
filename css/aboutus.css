@@ -1,3 +1,6 @@
+body{
+    background-color: rgba(109, 7, 7, 0.049)
+  }
 .about-wrapper{
     margin: 0 auto;
     width: 700px;
@@ -12,12 +15,13 @@
     margin: 0 auto;
     font-size: 30px;
     font-family: ALK Life;
+    color: white;
 }
 .about-section1 p{
     font-family: BPG Arial;
     text-align: justify;
     line-height: 30px;
-    color: black
+    color: rgb(0, 0, 0)
 }
 .paragrap span {
     font-weight: bold;
@@ -30,5 +34,25 @@
     height: 650px;
 }
 .about-section1 {
+    background-color: #1a3a69c4;
     padding-top: 120px;
 }
+.content {
+    position: relative;
+    z-index: -1;
+}
+.button{
+    width: 50px;
+    right: 0;
+    left: 0;
+    bottom: 50px;
+    position: absolute;
+    /* z-index: 5; */
+}
+.content div{
+  font-size: 20px;
+  font-family: BPG Nino Mtavruli;
+  color: brown;
+}
+
+

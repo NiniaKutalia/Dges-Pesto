@@ -1,22 +1,25 @@
 body {
-    background-image: url(https://img.freepik.com/free-vector/spring-floral-watercolor-background-vector-green-with-leaf-illustration_53876-126350.jpg?w=996&t=st=1669552567~exp=1669553167~hmac=9581cad6db0b7596cb97569dd3ba9b730567f4b0283407fd6fe4a5d65012f345);
+    /* background-image: url(https://img.freepik.com/free-vector/spring-floral-watercolor-background-vector-green-with-leaf-illustration_53876-126350.jpg?w=996&t=st=1669552567~exp=1669553167~hmac=9581cad6db0b7596cb97569dd3ba9b730567f4b0283407fd6fe4a5d65012f345); */
     background-repeat: no-repeat;
     background-size: cover;
+    background-color: rgba(109, 7, 7, 0.049)
 }
 .div-wrapper {
+    border-radius: 30px;
     height: 500px;
     width: 1200px;
     margin: 0 auto;
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     display: flex;
+    overflow:hidden;
     justify-content: space-around;
     align-items: center;
     background-color: rgba(201, 204, 204, 0.204);  
 
 }
 .div-wrapper:hover{
-    box-shadow: 0 0px 8px 0 rgb(0, 255, 187), 0 6px 20px 0 rgba(155, 57, 57, 0.19);
+    box-shadow: 0 0px 8px 0 #1A3969, 0 6px 20px 0 rgba(155, 57, 57, 0.19);
 }
 .contact-section {
     padding-top: 120px;
@@ -27,14 +30,14 @@ body {
     width: 100%;
 }
 .left-div h1{
+    letter-spacing: 10px;
     font-size: 50px;
     font-weight: bold;
     font-family: ALK Life;
-    color: rgb(154, 36, 0);
+    color: #F05F25;
     text-align: center;
 }
 .right-div {
-    /* background-color: rgb(26, 196, 23); */
     height: 400px;
     max-width: 500px;
     width: 100%;
@@ -47,27 +50,36 @@ body {
     width: 100%;
 }
 .soc-media {
-    
     display: flex;
     justify-content: space-between;
     margin: auto;
     width: 50%;
     font-size: 50px;
 }
+
+.facebook,.phone,.instagram,.mail{
+    color: #F05F25;
+}
+
 .facebook:hover {
-    color: blue;
-    text-shadow: 2px 2px 0px rgb(0, 166, 255);
+    color: #6E164A;
 }
 .instagram:hover {
-    color: red;
-    text-shadow: 2px 2px 0px rgb(242, 101, 101);  
-}
-.phone {
-    color: rgb(130, 86, 86);
+    color: #6E164A;
+    
 }
 .phone:hover{
-    text-shadow: 2px 2px 0px rgb(242, 101, 101); 
+    color: #6E164A;
 }
 .mail:hover {
-    text-shadow: 2px 2px 0px red; 
+    color: #6E164A;
+} 
+
+
+/* FOOTER */
+.footer {
+    margin-top: 50px;
+    width: 100%;
+    height: 400px;
+    background-color: #1A3969;
 }

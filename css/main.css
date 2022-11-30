@@ -1,4 +1,7 @@
 /* HEADER */
+body{
+    background-color: rgba(109, 7, 7, 0.049)
+  }
 a{
     color: white;
     text-decoration: none;
@@ -63,6 +66,7 @@ a{
     padding-top: 120px;
 }
 .main-section h1 {
+    display: block;
     font-size: 40px;
     font-family: ALK Life;
     color: black;
@@ -71,28 +75,47 @@ a{
 .main-wrapper {
     display: flex;
     justify-content: space-around;
-    align-items: center;
     margin-top: 20px;
     margin: 0 auto;
     width: 1000px;
-    height: 400px;
+    height: 500px;
     border: 3px;
     border-style: solid;
     border-color: coral;
+    /* 6E164A */
     border-radius: 30px;
     background-color: rgba(0, 0, 255, 0);
 }
 .product-wrapper {
+    /* align-self: top; */
+    width: 200px;
+    overflow: hidden;
     align-self: center;
     align-items: center;
+    justify-content: center;
 }
 .product-wrapper img {
     align-self: center;
     height: 200px;
 }
 .product-wrapper p {
+    line-height: 15px;
     margin-top: 10px;
-    text-align: center;
-    width: 50px;
+    text-align: justify;
+    width: 200px;
     font-size: 10px;
+}
+.product-wrapper h2 {
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-family: BPG Arial;
+}
+
+
+/* footer */
+.footer {
+    margin-top: 50px;
+    width: 100%;
+    height: 400px;
+    background-color: #1A3969;
 }
