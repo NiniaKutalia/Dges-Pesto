@@ -18,16 +18,19 @@ body {
 .div-wrapper:hover{
     box-shadow: 0 0px 8px 0 rgb(0, 255, 187), 0 6px 20px 0 rgba(155, 57, 57, 0.19);
 }
+.contact-section {
+    padding-top: 120px;
+}
 .left-div {
     height: 400px;
     max-width: 500px;
     width: 100%;
 }
 .left-div h1{
-    font-size: 20px;
+    font-size: 50px;
     font-weight: bold;
     font-family: ALK Life;
-    color: rgb(255, 0, 0);
+    color: rgb(154, 36, 0);
     text-align: center;
 }
 .right-div {
@@ -44,6 +47,7 @@ body {
     width: 100%;
 }
 .soc-media {
+    
     display: flex;
     justify-content: space-between;
     margin: auto;

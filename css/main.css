@@ -5,6 +5,12 @@ a{
 }
 
 .header {
+    /* height: 60px; */
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 128, 0, 0.179);
     padding-bottom: 90px;
     display: flex;
     margin: auto;
@@ -12,13 +18,13 @@ a{
     align-items: center;
 }
 .navigation-flex {
-    justify-content: flex-end;
     position: fixed;
     display: flex;
     margin: 0 auto;
-    margin-top: 65px;
+    margin-top: 80px;
     justify-content: space-around;
     align-items: center;
+    justify-content: center;
 }
 .logo {
     display: flex;
@@ -26,16 +32,11 @@ a{
     
 }
 .navigacia {
-    height: 80px;
-    border-radius: 10px 5px 30px 5px;
-    background-color: rgba(0, 128, 0, 0.179);
     align-items: center;
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
-    /* max-width: 100%; */
     width: 1440px;
-    margin: auto;
 }
 .nav-ul {
     justify-content: flex-end;
@@ -59,7 +60,7 @@ a{
 
 
 .main-section {
-    margin-top: 40px;
+    padding-top: 120px;
 }
 .main-section h1 {
     font-size: 40px;
@@ -84,7 +85,6 @@ a{
 .product-wrapper {
     align-self: center;
     align-items: center;
-    /* height: 200px; */
 }
 .product-wrapper img {
     align-self: center;
