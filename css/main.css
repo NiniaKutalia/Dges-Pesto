@@ -1,19 +1,19 @@
 /* HEADER */
 body{
+    cursor: default;
     background-color: rgba(109, 7, 7, 0.049)
   }
 a{
     color: white;
     text-decoration: none;
 }
-
 .header {
     /* height: 60px; */
     position: fixed;
     width: 100%;
     left: 0;
     top: 0;
-    background-color: rgba(0, 128, 0, 0.179);
+    background-color: rgba(0, 128, 0, 0.377);
     padding-bottom: 90px;
     display: flex;
     margin: auto;
@@ -32,7 +32,9 @@ a{
 .logo {
     display: flex;
     height: 45px;
-    
+}
+.logo:hover{
+    height: 50px;
 }
 .navigacia {
     align-items: center;
@@ -42,7 +44,6 @@ a{
     width: 1440px;
 }
 .nav-ul {
-    justify-content: flex-end;
     display: flex;
     font-size: 20px;
     font-family: lato;
@@ -51,25 +52,37 @@ a{
     font-family: lato;
 }
 .nav-li {
+    text-decoration: none;
+    position: relative;
     font-family: BPG Arial;
+    letter-spacing: 5px;
+    padding: 0 10px;
     margin-right: 40px;
 }
-.nav-li:hover {
-    cursor: pointer;
-    border-radius: 10px;
-    text-decoration: underline;
-    text-decoration-color: rgb(255, 0, 0);
+.nav-li::after{
+    content: '';
+    position: absolute;
+    background-color: #6E164A;
+    height: 3px;
+    width: 0%;
+    left: 0;
+    bottom: -10px;
 }
-
+.nav-li:hover:after {
+    width: 100%;
+    transition: 0.5s ease-out;
+}
 
 .main-section {
-    padding-top: 120px;
+    padding-top: 130px;
 }
 .main-section h1 {
-    display: block;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
     font-size: 40px;
     font-family: ALK Life;
-    color: black;
+    color: #6E164A;
     margin-bottom: 50px;
 }
 .main-wrapper {
@@ -87,14 +100,22 @@ a{
     background-color: rgba(0, 0, 255, 0);
 }
 .product-wrapper {
-    /* align-self: top; */
+    margin-top: 20px;
+    height: 500px;
+    border-radius: 30px;
     width: 200px;
-    overflow: hidden;
-    align-self: center;
-    align-items: center;
+    /* overflow: hidden; */
+    justify-content: space-between;
     justify-content: center;
 }
+.product-wrapper img:hover {
+    margin-bottom: 20px;
+    transform: scale(1.5);
+    transition: 0.5s ease-out;
+    cursor: pointer;
+}
 .product-wrapper img {
+
     align-self: center;
     height: 200px;
 }
@@ -104,11 +125,14 @@ a{
     text-align: justify;
     width: 200px;
     font-size: 10px;
+    font-family: BPG Nino Mtavruli;
 }
 .product-wrapper h2 {
+    color: #6E164A;
     margin-bottom: 15px;
     font-size: 20px;
     font-family: BPG Arial;
+    font-weight: bold;
 }
 
 
