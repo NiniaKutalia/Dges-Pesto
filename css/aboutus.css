@@ -197,16 +197,22 @@ body{
     background-color: #38438b;
 
   }
-  
   .darkSkyBlue {
     background-color: rgba(0, 128, 0, 0.405);
   }
   
-  .aquamarine {
-    background-color: #ff7e71;
-  }
+  /* .aquamarine {
+    background-color: #220303;
+  } */
   
-  .electricBlue {
+  /* .electricBlue {
     background-color: #ffb25f;
-  }
+  } */
   
+/* footer */
+.footer {
+  margin-top: 50px;
+  width: 100%;
+  height: 400px;
+  background-color: #1A3969;
+}
