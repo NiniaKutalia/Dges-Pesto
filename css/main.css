@@ -8,23 +8,21 @@ a{
     text-decoration: none;
 }
 .header {
+    z-index: 999;
+    height: 90px;
     position: fixed;
     width: 100%;
     left: 0;
     top: 0;
-    background-color: rgba(0, 128, 0, 0.377);
-    padding-bottom: 90px;
+    background-color: rgba(0, 128, 0, 1);
     display: flex;
     margin: auto;
     justify-content: space-around;
     align-items: center;
 }
 .navigation-flex {
-    position: fixed;
+    width: 100%;
     display: flex;
-    margin: 0 auto;
-    margin-top: 80px;
-    justify-content: space-around;
     align-items: center;
     justify-content: center;
 }
@@ -39,8 +37,9 @@ a{
     align-items: center;
     display: flex;
     justify-content: space-between;
-    margin: 0 auto;
-    width: 1440px;
+    margin: 0 40px;
+    max-width: 1400px;
+    width: 100%;
 }
 .nav-ul {
     display: flex;
@@ -49,14 +48,13 @@ a{
     font-weight: bold;
     text-transform: uppercase;
     font-family: lato;
+    gap: 0 40px;
 }
 .nav-li {
     text-decoration: none;
     position: relative;
     font-family: BPG Arial;
     letter-spacing: 5px;
-    padding: 0 10px;
-    margin-right: 40px;
 }
 .nav-li::after{
     content: '';
@@ -73,7 +71,7 @@ a{
 }
 
 .main-section {
-    padding-top: 130px;
+    padding: 130px 40px 0 40px;
 }
 .main-section h1 {
     text-align: center;
@@ -87,15 +85,16 @@ a{
 .main-wrapper {
     display: flex;
     justify-content: space-around;
-    margin-top: 20px;
     margin: 0 auto;
-    width: 1000px;
+    max-width: 1400px;
+    width: 100%;
     height: 500px;
     border: 3px;
     border-style: solid;
     border-color: coral;
     border-radius: 30px;
     background-color: rgba(0, 0, 255, 0);
+    gap: 0 20px;
 }
 .product-wrapper {
     margin-top: 20px;
@@ -138,6 +137,7 @@ body {
     color: rgb(145, 123, 123);
   }
   .recipe-card {
+    border-radius: 30px;
     -webkit-box-shadow: 0px 0px 20px 1px rgba(240,241,243,1);
     -moz-box-shadow: 0px 0px 20px 1px rgba(240,241,243,1);
     box-shadow: 0px 0px 20px 1px rgba(145, 146, 149, 0.779);
@@ -187,7 +187,8 @@ body {
   
   @media (min-width:599px) {
     .recipe-card {
-      width: 600px
+      max-width: 600px;
+      width: 100%;
     }
     .recipe-card__ingredients {
       column-count: 2
@@ -200,23 +201,15 @@ body {
     letter-spacing: 5px;
     font-size: 30px;
     width: 100%;
-    margin: 0 auto;
     text-align: center;
-    margin-top: 100px;
     margin-bottom: 30px;
 }
 .shop-main-wrapper {
-    margin: 0 auto;
-    max-width: 800px;
-    width: 100%;
-    overflow: hidden;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    text-align: center;
 }
 .shop-wrapper {
-    margin-top: 50px;
-    height: 200px;
+    margin-top: 30px;
+    height: auto;
 }
 .shop-wrapper img {
     border-radius: 20px;
@@ -233,4 +226,19 @@ body {
     width: 100%;
     height: 400px;
     background-color: #1A3969;
+}
+
+.sections-wrapper {
+    padding: 0 40px;
+    margin: 0 auto;
+    max-width: 1480px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.recipt {
+    border-radius: 30px;
 }

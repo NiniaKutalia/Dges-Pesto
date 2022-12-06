@@ -1,113 +1,108 @@
 body{
-    background-color: rgba(109, 7, 7, 0.049)
-  }
+  background-color: rgba(109, 7, 7, 0.049)
+}
 .about-wrapper{
-    margin: 0 auto;
-    width: 700px;
-    height: 500px;
+  max-width: 1480px;
+  padding: 0 40px;
+  width: 100%;
+  margin: 0 auto 100px;
+  text-align: center;
 }
 .me-nina {
-    height: 100%;
+  height: 100%;
 }
 .h1{
-    text-align: center;
-    width: 100%;
-    margin: 0 auto;
-    font-size: 40px;
-    font-family: 'ALK life';
-    color: rgb(63, 63, 63);
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  font-size: 40px;
+  font-family: 'ALK life';
+  color: rgb(63, 63, 63);
 }
 .about-section1{
-  margin-top: 140px;
-  margin-bottom: 700px;
+margin-top: 140px;
 }
 .about-section1 p{
-    font-family: BPG Arial;
-    text-align: justify;
-    line-height: 30px;
-    color: rgb(204, 204, 204)
+  font-family: BPG Arial;
+  text-align: justify;
+  line-height: 30px;
+  color: rgb(204, 204, 204)
 }
 .paragrap span {
-    font-weight: bold;
-}
-.container {
-    height: 30px;
-    margin-top: 20px;
+  font-weight: bold;
 }
 
 
 /* BLOG */
 
 .container {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 30px;
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 100px 40px;
 }
 .card {
-  background-color: #fff;
-  max-width: 800px;
-  height: 300px;
-  box-shadow: 2px 2px 5px #9E9E9E, -1px -1px 5px #9E9E9E;
-  border-radius: 3px;
-  display: grid;
+background-color: #fff;
+max-width: 800px;
+box-shadow: 2px 2px 5px #9E9E9E, -1px -1px 5px #9E9E9E;
+border-radius: 3px;
+display: grid;
 }
 .card .img-container {
-  width: 230px;
-  height: 100%;
-  grid-column: 2;
-  background-color: #ffffff;
-  background-image: url('https://cdn.fortuna.ge/app/uploads/2021/11/unnamed-1-2021-11-30_16-55-32_065635.jpg');
-  background-size: cover;
-  background-position: center center;
+width: 230px;
+height: 100%;
+grid-column: 2;
+background-color: #ffffff;
+background-image: url('https://cdn.fortuna.ge/app/uploads/2021/11/unnamed-1-2021-11-30_16-55-32_065635.jpg');
+background-size: cover;
+background-position: center center;
 }
 .card-content {
-  grid-column: 3 / 5;
-  padding: 10px 30px;
-  border-left: 1px solid #ccc;
+grid-column: 3 / 5;
+padding: 10px 30px;
+border-left: 1px solid #ccc;
 }
 h2 {
-  font-size: 30px;
-  font-family: 'ALK Life';
-  margin-bottom: 30px;
-  margin-top: 10px;
-  color: #555;
+font-size: 30px;
+font-family: 'ALK Life';
+margin-bottom: 30px;
+margin-top: 10px;
+color: #555;
 }
 .card-content .author {
-  border-top: 1px solid #cdcdcd;
-  font-weight: 700;
-  padding: 25px 0 10px 0;
-  font-size: 15px;
+border-top: 1px solid #cdcdcd;
+font-weight: 700;
+padding: 25px 0 10px 0;
+font-size: 15px;
 }
 .author{
-  font-style: italic;
-  font-weight: 700px;
-  color: #ff000096;
+font-style: italic;
+font-weight: 700px;
+color: #ff000096;
 }
 .author:hover{
 
-  color: #38438b;
+color: #38438b;
 }
 .excerpt span{
-  font-weight: bold;
+font-weight: bold;
 }
 .excerpt{
-  margin-bottom: 20px;
-  line-height: 20px;
+margin-bottom: 20px;
+line-height: 20px;
 }
 @media only screen and (max-width:600px) {
-  .card {
-    display: block;
-  }
-  .card .img-container {
-    height: 250px;
-    width: 100%;
-  }
-  .card-content {
-    border: 0;
-    border-top: 1px solid #ccc;
-  }
+.card {
+  display: block;
+}
+.card .img-container {
+  height: 250px;
+  width: 100%;
+}
+.card-content {
+  border: 0;
+  border-top: 1px solid #ccc;
+}
 }
 
 
@@ -117,60 +112,60 @@ h2 {
 
 /* GALLERY */
 body{
-  margin: 0;
-  padding: 0;
+margin: 0;
+padding: 0;
 }
 .slider{
-  width:100%;
-  height:600px;
-  margin:0 auto;
-  position: relative;
-  overflow: hidden;
+width:100%;
+height:600px;
+margin:0 auto;
+position: relative;
+overflow: hidden;
 }
 .slide-ana{
-  height: 100%;
+height: 100%;
 }
 .slide-ana div{
-  width:100%;
-  height: 100%;
-  position: absolute;
-  transition: all 1s;
-  background-size:contain;
-  background-position: center center;
-  background-repeat: no-repeat;
+width:100%;
+height: 100%;
+position: absolute;
+transition: all 1s;
+background-size:contain;
+background-position: center center;
+background-repeat: no-repeat;
 }
 .slider span{
-  height: 50px;
-  position: absolute;
-  top:50%;
-  margin:-25px 0 0 0;
-  background-color: rgba(0, 0, 0, 0.4);
-  color:#fff;
-  line-height: 50px;
-  text-align: center;
-  cursor: pointer;
+height: 50px;
+position: absolute;
+top:50%;
+margin:-25px 0 0 0;
+background-color: rgba(0, 0, 0, 0.4);
+color:#fff;
+line-height: 50px;
+text-align: center;
+cursor: pointer;
 }
 .slide-ana{
-  font-size: 30px;
-  text-align: center;
-  text-transform: uppercase;
-  color: #fff;
+font-size: 30px;
+text-align: center;
+text-transform: uppercase;
+color: #fff;
 }
 #prev{
-  left:30%;
-  border-radius: 10px 0 0 10px;
+left:30%;
+border-radius: 10px 0 0 10px;
 }
 #next{
-  right:30%;
-  border-radius:0 10px 10px 0;
+right:30%;
+border-radius:0 10px 10px 0;
 }
 #prev svg,#next svg{
-  width:100%;
-  fill: #fff;
+width:100%;
+fill: #fff;
 }
 #prev:hover,
 #next:hover{
-  background-color: rgba(0, 0, 0, 0.8);
+background-color: rgba(0, 0, 0, 0.8);
 }
 
 
@@ -178,41 +173,41 @@ body{
 /* BACKGROUND GRADIENT */
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto Mono', monospace;
-  }
-  
-  body {
-    background-color: #38438b;
-    transition: 2s all;
-  }
-  
-  section {
-    height: 100%;
-  }
-  
-  .lightCyan {
-    background-color: #38438b;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto Mono', monospace;
+}
 
-  }
-  .darkSkyBlue {
-    background-color: rgba(0, 128, 0, 0.405);
-  }
-  
-  /* .aquamarine {
-    background-color: #220303;
-  } */
-  
-  /* .electricBlue {
-    background-color: #ffb25f;
-  } */
-  
+body {
+  background-color: #38438b;
+  transition: 2s all;
+}
+
+section {
+  height: 100%;
+}
+
+.lightCyan {
+  background-color: #38438b;
+
+}
+.darkSkyBlue {
+  background-color: rgba(0, 128, 0, 0.405);
+}
+
+/* .aquamarine {
+  background-color: #220303;
+} */
+
+/* .electricBlue {
+  background-color: #ffb25f;
+} */
+
 /* footer */
 .footer {
-  margin-top: 50px;
-  width: 100%;
-  height: 400px;
-  background-color: #1A3969;
+margin-top: 50px;
+width: 100%;
+height: 400px;
+background-color: #1A3969;
 }
