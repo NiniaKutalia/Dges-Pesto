@@ -1,82 +1,50 @@
-body {
-    /* background-image: url(https://img.freepik.com/free-vector/spring-floral-watercolor-background-vector-green-with-leaf-illustration_53876-126350.jpg?w=996&t=st=1669552567~exp=1669553167~hmac=9581cad6db0b7596cb97569dd3ba9b730567f4b0283407fd6fe4a5d65012f345); */
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: rgba(109, 7, 7, 0.049)
-}
-.div-wrapper {
-    border-radius: 30px;
-    margin: 30px 0 50px;
-    height: 500px;
-    max-width: 1400px;
-    width: 100%;
+#ul-list{
+    overflow: hidden;
+    margin-top: 120px;
     display: flex;
-    overflow:hidden;
-    justify-content: space-around;
-    align-items: center;
-    background-color: rgba(201, 204, 204, 0.204);  
-
-}
-.div-wrapper:hover{
-    box-shadow: 0 0px 8px 0 #1A3969, 0 6px 20px 0 rgba(155, 57, 57, 0.19);
-}
-.contact-section {
-    padding: 130px 40px 0;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-.left-div {
-    height: 400px;
-    max-width: 500px;
-    width: 100%;
-}
-.left-div h1{
-    letter-spacing: 10px;
-    font-size: 50px;
+    flex-wrap: wrap;
+    color: rgb(244, 94, 0);
+    font-size: 15px;
+    font-family: 'BPG Nino Mtavruli';
     font-weight: bold;
-    font-family: 'ALK life';
-    color: rgb(63, 63, 63);
-    text-align: center;
 }
-.right-div {
-    height: 400px;
-    max-width: 500px;
+/* .our-customer-div{
+    margin-top: 120px;
+    max-width: 1600px;
     width: 100%;
-    border-radius: 30px 0;
-}
-.frame {
-    border-radius: 30px 0;
-}
-.contact-img {
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 20px 80px 20px 250px;
+
+} */
+.our-customers {
+    margin-top: 120px;
+    max-width: 1600px;
     width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 20px 80px 20px 250px;
 }
-.soc-media {
-    display: flex;
-    justify-content: space-between;
-    margin: auto;
-    width: 50%;
-    font-size: 50px;
-}
-
-.facebook,.phone,.instagram,.mail{
-    color: #F05F25;
-}
-
-.facebook:hover {
-    color: #6E164A;
-}
-.instagram:hover {
-    color: #6E164A;
+.image-block{
+    
+    max-width: 200px;
+    height: 150px;
+    margin-right: 120px;
+    margin-bottom: 20px;
+    margin-top: 20px;
     
 }
-.phone:hover{
-    color: #6E164A;
-}
-.mail:hover {
-    color: #6E164A;
-} 
 
+#loadPrev , #loadNext{ 
+    border-radius: 10px;
+    background-color: rgb(0, 140, 255);
+    color: white;
+    cursor: pointer;
+    margin-top: 20px;
+    border: none;
+    font-size: 25px;
+    font-family: 'BPG Arial';
+}
 
 /* FOOTER */
 .footer {
