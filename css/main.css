@@ -238,6 +238,8 @@ body {
 
 /* footer */
 .footer {
+    display: flex;
+    flex-direction: column;
     width: 100%;
     background-color: #121212;
     display: flex;
@@ -247,13 +249,14 @@ body {
   }
   .footer-wraper {
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: 1480px;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-content: center;
     margin-top: 90px;
     flex-wrap: wrap;
+    padding: 0 40px;
   }
   .footer-div-1 {
     max-width: 280px;
@@ -336,6 +339,7 @@ body {
     color: #B1B1B1;
     margin-top: 50px;
     margin-bottom: 50px;
+    padding: 0 40px;
   }
   
   .copyright span {

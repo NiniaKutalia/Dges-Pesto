@@ -81,6 +81,8 @@ body {
 
 /* FOOTER */
 .footer {
+    display: flex;
+    flex-direction: column;
     width: 100%;
     background-color: #121212;
     display: flex;
@@ -90,7 +92,7 @@ body {
   }
   .footer-wraper {
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: 1480px;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -179,6 +181,7 @@ body {
     color: #B1B1B1;
     margin-top: 50px;
     margin-bottom: 50px;
+    padding: 0 40px;
   }
   
   .copyright span {
