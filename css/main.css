@@ -335,11 +335,12 @@ body {
   }
   .copyright {
     font-family:'Poppins', sans-serif;
-    margin-right: auto;
+    margin: 0 auto;
+    max-width: 1480px;
+    width: 100%;
     color: #B1B1B1;
     margin-top: 50px;
     margin-bottom: 50px;
-    padding: 0 40px;
   }
   
   .copyright span {

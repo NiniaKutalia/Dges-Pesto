@@ -21,11 +21,15 @@ body {
     box-shadow: 0 0px 8px 0 #1A3969, 0 6px 20px 0 rgba(155, 57, 57, 0.19);
 }
 .contact-section {
-  margin-bottom: 50px;
-    padding: 130px 40px 0;
+    margin-top: 100px;
     display: flex;
     align-items: center;
     flex-direction: column;
+    margin: 0 auto;
+    max-width: 1480px;
+    width: 100%;
+    margin-top: 140px;
+    margin-bottom: 50px;
 }
 .left-div {
     height: 400px;
@@ -88,7 +92,9 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 auto;
+    /* margin: 0 auto; */
+    /* margin-top: 1000px; */
+    
   }
   .footer-wraper {
     margin: 0 auto;
@@ -177,11 +183,12 @@ body {
   }
   .copyright {
     font-family:'Poppins', sans-serif;
-    margin-right: auto;
+    margin: 0 auto;
+    max-width: 1480px;
+    width: 100%;
     color: #B1B1B1;
     margin-top: 50px;
     margin-bottom: 50px;
-    padding: 0 40px;
   }
   
   .copyright span {
