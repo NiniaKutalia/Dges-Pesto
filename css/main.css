@@ -14,7 +14,8 @@ a{
     width: 100%;
     left: 0;
     top: 0;
-    background-color: rgba(0, 128, 0, 1);
+    background-color: #0A7348;
+    box-shadow: 1px 1px px 0 rgba(0,0,0,.1);
     display: flex;
     margin: auto;
     justify-content: space-around;
