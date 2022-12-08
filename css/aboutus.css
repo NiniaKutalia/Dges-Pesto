@@ -1,40 +1,28 @@
 /* HEADER */
-
 body{
+  margin: 0;
   cursor: default;
   background-color: rgba(109, 7, 7, 0.049)
 }
 a{
-  color: white;
+  color: black;
   text-decoration: none;
 }
+
 .header {
+  background-color: #fff;
+  box-shadow: 1px 1px 4px 0 #3d3d3d;
+  position: fixed;
+  width: 100%;  
   z-index: 999;
   height: 90px;
-  position: fixed;
-  width: 100%;
   left: 0;
   top: 0;
-  background-color: #0A7348;
-  box-shadow: 1px 1px px 0 rgba(0,0,0,.1);
   display: flex;
   margin: auto;
   justify-content: space-around;
   align-items: center;
-}
-.navigation-flex {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.logo {
-  display: flex;
-  height: 45px;
-}
-.logo:hover{
-  height: 50px;
-}
+  }
 .navigacia {
   align-items: center;
   display: flex;
@@ -43,34 +31,134 @@ a{
   max-width: 1400px;
   width: 100%;
 }
-.nav-ul {
-  display: flex;
-  font-size: 20px;
-  font-family: lato;
-  font-weight: bold;
-  text-transform: uppercase;
-  font-family: lato;
-  gap: 0 40px;
-}
-.nav-li {
+  
+.header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+  }
+  
+.header li a {
   text-decoration: none;
-  position: relative;
   font-family: BPG Arial;
   letter-spacing: 5px;
+  display: block;
+  padding: 20px 20px;
+  text-decoration: none;
+  }
+  
+.header li a:hover{
+  border-radius: 20px;
+  color: white;
+  background-color: #F05F25;
+  }
+  
+.header .logo {
+  background-color: #F05F25;
+  color: white;
+  font-family: 'ALK life';
+  font-size: 25px;
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
 }
-.nav-li::after{
-  content: '';
-  position: absolute;
-  background-color: #6E164A;
-  height: 3px;
-  width: 0%;
-  left: 0;
-  bottom: -10px;
+
+  
+  /* menu */
+  
+.header .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+  }
+  
+  /* menu icon */
+  
+.header .menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+  }
+  
+.header .menu-icon .navicon {
+    background: #333;
+    display: block;
+    height: 2px;
+    position: relative;
+    width: 18px;
+  }
+  
+.header .menu-icon .navicon:before,
+  .header .menu-icon .navicon:after {
+    background: #333;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+  }
+  
+.header .menu-icon .navicon:before {
+    top: 5px;
+  }
+  
+.header .menu-icon .navicon:after {
+    top: -5px;
+  }
+  
+  /* menu btn */
+
+.header .menu-btn {
+  display: none;
 }
-.nav-li:hover:after {
-  width: 100%;
-  transition: 0.5s ease-out;
-} 
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+ 
+  
+  /* 48em = 768px */
+  
+  @media (min-width: 48em) {
+    .header li {
+      float: left;
+    }
+    .header li a {
+      padding: 20px 30px;
+    }
+    .header .menu {
+      clear: none;
+      float: right;
+      max-height: none;
+    }
+    .header .menu-icon {
+      display: none;
+    }
+  }
+
+
+  /* ------- */
 .about-wrapper{
   max-width: 1480px;
   padding: 0 40px;
@@ -79,15 +167,33 @@ a{
   text-align: center;
 }
 .me-nina {
+  min-height: 100px;
   height: 100%;
 }
-.h1{
+@media (max-width:1200px) {
+  .me-nina {
+    height: 500px;
+  }
+}
+@media (max-width:600px) {
+  .me-nina {
+    height: 200px;
+  }
+}
+@media (max-width:320px) {
+  .me-nina {
+    height: 50px;
+  }
+}
+
+
+.about-wrapper h1{
   text-align: center;
   width: 100%;
   margin: 0 auto;
   font-size: 40px;
   font-family: 'ALK life';
-  color: rgb(63, 63, 63);
+  color: rgb(255, 255, 255);
 }
 .about-section1{
 margin-top: 140px;
@@ -104,62 +210,59 @@ margin-top: 140px;
 
 
 /* BLOG */
-
 .container {
-display: flex;
-justify-content: center;
-align-items: center;
-padding: 100px 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 40px;
 }
 .card {
-background-color: #fff;
-max-width: 800px;
-box-shadow: 2px 2px 5px #9E9E9E, -1px -1px 5px #9E9E9E;
-border-radius: 3px;
-display: grid;
+  background-color: #fff;
+  max-width: 800px;
+  box-shadow: 2px 2px 5px #9E9E9E, -1px -1px 5px #9E9E9E;
+  border-radius: 3px;
+  display: grid;
 }
 .card .img-container {
-width: 230px;
-height: 100%;
-grid-column: 2;
-background-color: #ffffff;
-background-image: url('https://cdn.fortuna.ge/app/uploads/2021/11/unnamed-1-2021-11-30_16-55-32_065635.jpg');
-background-size: cover;
-background-position: center center;
+  width: 230px;
+  height: 100%;
+  grid-column: 2;
+  background-color: #ffffff;
+  background-image: url('https://cdn.fortuna.ge/app/uploads/2021/11/unnamed-1-2021-11-30_16-55-32_065635.jpg');
+  background-size: cover;
+  background-position: center center;
 }
 .card-content {
-grid-column: 3 / 5;
-padding: 10px 30px;
-border-left: 1px solid #ccc;
+  grid-column: 3 / 5;
+  padding: 10px 30px;
+  border-left: 1px solid #ccc;
 }
-h2 {
-font-size: 30px;
-font-family: 'ALK Life';
-margin-bottom: 30px;
-margin-top: 10px;
-color: #555;
+.h2 {
+  font-size: 30px;
+  margin-bottom: 30px;
+  margin-top: 10px;
+  color: #555;
 }
 .card-content .author {
-border-top: 1px solid #cdcdcd;
-font-weight: 700;
-padding: 25px 0 10px 0;
-font-size: 15px;
+  border-top: 1px solid #cdcdcd;
+  font-weight: 700;
+  padding: 25px 0 10px 0;
+  font-size: 15px;
 }
 .author{
-font-style: italic;
-font-weight: 700px;
-color: #ff000096;
+  font-style: italic;
+  font-weight: 700px;
+  color: #ff000096;
 }
 .author:hover{
-
-color: #38438b;
+  color: #38438b;
 }
 .excerpt span{
-font-weight: bold;
+  font-weight: bold;
 }
 .excerpt{
-margin-bottom: 20px;
-line-height: 20px;
+  margin-bottom: 20px;
+  line-height: 20px;
 }
 @media only screen and (max-width:600px) {
 .card {
@@ -250,7 +353,7 @@ background-color: rgba(0, 0, 0, 0.8);
 }
 
 body {
-  background-color: #38438b;
+  background-color: #515c9f;
   transition: 2s all;
 }
 
@@ -286,18 +389,19 @@ section {
   align-content: center;
   margin-top: 90px;
   flex-wrap: wrap;
-  padding: 0 40px;
 }
 .footer-div-1 {
   max-width: 280px;
   width: 100%;
 }
 .footer-div-1 h2 {
+  font-family: 'BPG Arial';
   color: #FFFFFF;
   font-size: 30px;
   margin-bottom: 20px;
 }
 .footer-div-1 p {
+  font-family:'BPG Arial';
   color: #B1B1B1;
   font-size: 14px;
   line-height: 19px;
@@ -309,6 +413,7 @@ section {
   width: 100%;
 }
 .useful-links a {
+  font-family:'BPG Arial';
   color: rgb(88, 99, 248);
   padding: 10px 0;
   display: block;
@@ -322,29 +427,30 @@ section {
 }
 
 .privacy {
-  font-family:'Poppins', sans-serif;
   max-width: 100px;
   width: 100%;
 }
 .privacy a {
+  font-family:'BPG Arial';
   color: rgb(88, 99, 248);
   padding: 10px 0;
   display: block;
 }
 .privacy h3 {
+  font-family:'BPG Arial';
   color: #FFFFFF;
-  font-size: 18px;
+  font-size: 20px;
   padding-bottom: 21px;
 }
   
 .contact {
-  font-family:'Poppins', sans-serif;
   max-width: 200px;
   width: 100%;
 }
 .contact h3 {
+  font-family:'BPG Arial';
   color: #FFFFFF;
-  font-size: 18px;
+  font-size: 20px;
   padding-bottom: 21px;
 }
 .contact i {
@@ -354,6 +460,7 @@ section {
   height: 12.83px;
 }
 .contact a {
+  font-family:'BPG Arial';
   font-size: 14px;
   color: #FFFFFF;
 }
