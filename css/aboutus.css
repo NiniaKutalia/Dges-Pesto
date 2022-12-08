@@ -1,6 +1,76 @@
+/* HEADER */
+
 body{
+  cursor: default;
   background-color: rgba(109, 7, 7, 0.049)
 }
+a{
+  color: white;
+  text-decoration: none;
+}
+.header {
+  z-index: 999;
+  height: 90px;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background-color: #0A7348;
+  box-shadow: 1px 1px px 0 rgba(0,0,0,.1);
+  display: flex;
+  margin: auto;
+  justify-content: space-around;
+  align-items: center;
+}
+.navigation-flex {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo {
+  display: flex;
+  height: 45px;
+}
+.logo:hover{
+  height: 50px;
+}
+.navigacia {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 40px;
+  max-width: 1400px;
+  width: 100%;
+}
+.nav-ul {
+  display: flex;
+  font-size: 20px;
+  font-family: lato;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: lato;
+  gap: 0 40px;
+}
+.nav-li {
+  text-decoration: none;
+  position: relative;
+  font-family: BPG Arial;
+  letter-spacing: 5px;
+}
+.nav-li::after{
+  content: '';
+  position: absolute;
+  background-color: #6E164A;
+  height: 3px;
+  width: 0%;
+  left: 0;
+  bottom: -10px;
+}
+.nav-li:hover:after {
+  width: 100%;
+  transition: 0.5s ease-out;
+} 
 .about-wrapper{
   max-width: 1480px;
   padding: 0 40px;
@@ -196,15 +266,19 @@ section {
   background-color: rgba(0, 128, 0, 0.405);
 }
 
-/* footer */
+/* FOOTER */
 .footer {
+  display: flex;
   flex-direction: column;
   width: 100%;
   background-color: #121212;
-
+  display: flex;
+  justify-content: space-between;
   align-items: center;
+  margin: 0 auto;
 }
 .footer-wraper {
+  margin: 0 auto;
   max-width: 1480px;
   width: 100%;
   display: flex;
@@ -212,6 +286,7 @@ section {
   align-content: center;
   margin-top: 90px;
   flex-wrap: wrap;
+  padding: 0 40px;
 }
 .footer-div-1 {
   max-width: 280px;
@@ -275,7 +350,7 @@ section {
 .contact i {
   color: #5863F8;
   max-width: 16px;
-  width: 100%;
+  width: 1100%;
   height: 12.83px;
 }
 .contact a {
@@ -301,4 +376,60 @@ section {
 .copyright span {
   font-family:'Poppins', sans-serif;
   color: #5863F8;
+}
+
+@media (max-width: 1024px) {
+  .section2 {
+    height: 1000px;
+  }
+}
+@media (max-width: 768px) {
+    .footer-div-1,
+    .blok {
+        width: 45%;
+    }
+  .bar-div {
+    display: block;
+    font-size: 14px;
+  }
+  .useful-links , .privacy , .contact {
+    margin-top: 20px;
+  }
+  .contact a{
+    font-size: 10px;
+  }
+  .h3 {
+    width: 450px;
+    height: 70px;
+    font-size: 38px;
+  }
+  .section4 p {
+    font-size: 38px;
+    width: 400px;
+    height: 70px;
+  }
+  .sec-3paragraph {
+    width: 483px;
+    height: 387px;
+  }
+  .bottom {
+    flex-direction: column;
+    align-items: center;
+  }
+  .bottom-mid {
+    margin: 30px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact a{
+    font-size: 10px;
+  }
+  .header {
+    width: 400px;
+  }
+  .footer-div-1,
+    .blok {
+        width: 100%;
+    }
 }
