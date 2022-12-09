@@ -57,6 +57,7 @@ a{
   }
   
 .header .logo {
+  border-radius: 30px;
   background-color: #F05F25;
   color: white;
   font-family: 'ALK life';
@@ -317,9 +318,10 @@ body {
     border-bottom: 1px solid #eb9376;
   }
   .active {
+    cursor: pointer;
     font-family: BPG Arial;
-    letter-spacing: 1px;
-    margin-bottom: 10px;
+    font-size: 16px;
+    
   }
   .pesto-img{
     overflow: hidden;

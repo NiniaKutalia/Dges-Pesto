@@ -38,7 +38,7 @@ a{
     padding: 0;
     list-style: none;
     overflow: hidden;
-    background-color: #fff;
+    /* margin-top: 170px; */
   }
   
 .header li a {
@@ -57,6 +57,7 @@ a{
   }
   
 .header .logo {
+  border-radius: 30px;
   background-color: #F05F25;
   color: white;
   font-family: 'ALK life';
@@ -119,7 +120,7 @@ a{
 }
 
 .header .menu-btn:checked ~ .menu {
-  max-height: 240px;
+  max-height: 250px;
 }
 
 .header .menu-btn:checked ~ .menu-icon .navicon {
@@ -143,6 +144,7 @@ a{
   /* 48em = 768px */
   
   @media (min-width: 48em) {
+    
     .header li {
       float: left;
     }
@@ -190,13 +192,15 @@ a{
 
 #loadPrev , #loadNext{ 
     border-radius: 10px;
-    background-color: #F05F25;
-    color: white;
+    color: #F05F25;
     cursor: pointer;
     margin-top: 20px;
     border: none;
     font-size: 25px;
     font-family: 'BPG Arial';
+}
+#loadNext {
+  margin-left: 20px;
 }
 
 /* FOOTER */

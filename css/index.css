@@ -27,15 +27,29 @@ body {
   }
   
   h1 {
-    letter-spacing: 50px;
+    /* letter-spacing: 50px; */
     font-size: 100px;
     font-family: "ALK life";
     max-width: 40ch;
     text-align: center;
     transform: scale(0.94);
     animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
-    color: green;
+    color: #0A7348;
   }
+ 
+  @media (max-width:800px) {
+    .title {
+      font-size: 50px;
+      letter-spacing: normal;
+    }
+  }
+  @media (max-width:400px) {
+    .title {
+      font-size: 20px;
+      letter-spacing: normal;
+    }
+  }
+
   @keyframes scale {
     100% {
       transform: scale(1);

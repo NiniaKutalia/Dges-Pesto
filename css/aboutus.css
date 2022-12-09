@@ -55,6 +55,7 @@ a{
   }
   
 .header .logo {
+  border-radius: 30px;
   background-color: #F05F25;
   color: white;
   font-family: 'ALK life';
