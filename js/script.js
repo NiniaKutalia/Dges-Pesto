@@ -1,13 +1,12 @@
 "use strict"
 
 // burger menu
+let hamburger = document.querySelector(".hamburger");
+let menu = document.querySelector(".menu");
 
-
-
-let navigation = document.getElementById('navbar');
-let burgerbar = document.getElementById('burgerBar');
-
-burgerbar.addEventListener('click', function () {
-    burgerbar.classList.toggle('activeBar');
-    navigation.classList.toggle('activeNav');
+hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle('active');
+    menu.classList.toggle('active');
 })
+
+

@@ -8,10 +8,7 @@ a{
   color: black;
   text-decoration: none;
 }
-
-/* HEADER */
-
-.header {
+header {
   background-color: #fff;
   box-shadow: 1px 1px 4px 0 #0A7348;
   position: fixed;
@@ -24,7 +21,7 @@ a{
   margin: auto;
   justify-content: space-around;
   align-items: center;
-  }
+}
 .navigacia {
   align-items: center;
   display: flex;
@@ -34,131 +31,101 @@ a{
   width: 100%;
 }
   
-.header ul {
-  margin: 0;
-  padding: 0;
+li{
   list-style: none;
-  overflow: hidden;
 }
-  
-.header li a {
-  text-decoration: none;
-  font-family: BPG Arial;
-  letter-spacing: 5px;
-  display: block;
-  padding: 20px 20px;
-  text-decoration: none;
+.navbar {
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+  max-width: 1400px;
+  width: 100%;
 }
-  
-.header li a:hover{
-  border-radius: 20px;
-  color: white;
-  background-color: #F05F25;
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
 }
-  
-.header .logo {
-  border-radius: 30px;
-  background-color: #F05F25;
-  color: white;
-  font-family: 'ALK life';
+.logo {
+  font-family: 'ALK Life';
   font-size: 25px;
-  display: block;
-  padding: 10px 20px;
-  text-decoration: none;
+}
+.nav-link{
+  cursor: pointer;
+  font-family: BPG Arial;
+  font-size: 16px;
+  transition: 0.5s ease;
+  position: relative;
+}
+.nav-link:hover{
+  color: gray;
+}
+.nav-link::after {
+  content: " ";
+  position: absolute;
+  background-color: green;
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -8px;
+  transition: 0.3s linear;
+}
+.nav-link:hover::after{
+  width: 100%;
 }
 
-  
-  /* menu */
-  
-.header .menu {
-    clear: both;
-    max-height: 0;
-    transition: max-height .2s ease-out;
-  }
-  
-  /* menu icon */
-  
-.header .menu-icon {
-    cursor: pointer;
-    display: inline-block;
-    padding: 28px 20px;
-    position: relative;
-    user-select: none;
-  }
-  
-.header .menu-icon .navicon {
-    background: #333;
-    display: block;
-    height: 2px;
-    position: relative;
-    width: 18px;
-  }
-  
-.header .menu-icon .navicon:before,
-  .header .menu-icon .navicon:after {
-    background: #333;
-    content: '';
-    display: block;
-    height: 100%;
-    position: absolute;
-    transition: all .2s ease-out;
-    width: 100%;
-  }
-  
-.header .menu-icon .navicon:before {
-    top: 5px;
-  }
-  
-.header .menu-icon .navicon:after {
-    top: -5px;
-  }
-  
-  /* menu btn */
-
-.header .menu-btn {
+/* HAMBURGER */
+.hamburger {
   display: none;
+  cursor: pointer;
 }
-
-.header .menu-btn:checked ~ .menu {
-  max-height: 240px;
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3 ease-in-out;
+  transition: all 0.3 ease-in-out;
+  background-color: rgb(108, 0, 0);
 }
-
-.header .menu-btn:checked ~ .menu-icon .navicon {
-  background: transparent;
-}
-
-.header .menu-btn:checked ~ .menu-icon .navicon:before {
-  transform: rotate(-45deg);
-}
-
-.header .menu-btn:checked ~ .menu-icon .navicon:after {
-  transform: rotate(45deg);
-}
-
-.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
-.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
-  top: 0;
-}
- 
-  
-  /* 48em = 768px */
-  
-  @media (min-width: 48em) {
-    .header li {
-      float: left;
-    }
-    .header li a {
-      padding: 20px 30px;
-    }
-    .header .menu {
-      clear: none;
-      float: right;
-      max-height: none;
-    }
-    .header .menu-icon {
-      display: none;
-    }
+@media (max-width:768px) {
+  .hamburger {
+    display: block;
   }
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  .menu {
+  position: fixed;
+  left: -100%;
+  top: 70px;
+  gap: 0;
+  flex-direction: column;
+  background-color: #0A7348;
+  width: 100%;
+  text-align: center;
+  transition: 0.3 s;
+  }
+  .nav-item {
+    margin: 16px 0;
+  }
+  .menu.active {
+    left: 0;
+  }
+  .nav-link {
+    color: white;
+  }
+}
+
 
 
 
@@ -210,9 +177,11 @@ a{
 }
 @media (max-width:400px) {
   .soc-media {
-    flex-direction: column;
+    font-size: 5px;
     height: auto;
-    
+  }
+  .privacy {
+    margin-top: 20px;
   }
 }
 
@@ -243,6 +212,7 @@ a{
 }
 .soc-media {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     margin: 0 auto;
     width: 100%;

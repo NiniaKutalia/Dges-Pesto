@@ -10,24 +10,37 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
     />
+    <script src="../js/script.js" defer></script>
     <script src="../js/aboutus.js" defer></script>
+
     <title>About Us</title>
     <link rel="icon" type="image/x-icon" href="../imgs/info.png" />
   </head>
   <body>
     <header class="header">
       <div class="navigacia">
-        <a href="../index.html" class="logo">დღეს პესტო</a>
-        <input class="menu-btn" type="checkbox" id="menu-btn" />
-        <label class="menu-icon" for="menu-btn"
-          ><span class="navicon"></span
-        ></label>
-        <ul class="menu">
-          <li><a href="../html/main.html">HOME</a></li>
-          <li><a href="../html/contact.html">CONTACT</a></li>
-          <li><a href="../html/aboutus.html">ABOUT US</a></li>
-          <li><a href="../html/customers.html">CUSTOMERS</a></li>
-        </ul>
+        <nav class="navbar">
+          <a href="../index.html" class="logo">დღეს პესტო</a>
+          <ul class="menu">
+            <li class="nav-item">
+              <a class="nav-link" href="../html/main.html">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../html/contact.html">CONTACT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../html/aboutus.html">ABOUT US</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../html/customers.html">CUSTOMERS</a>
+            </li>
+          </ul>
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </nav>
       </div>
     </header>
     <section class="about-section1">
