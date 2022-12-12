@@ -225,13 +225,23 @@ li{
     font-family:'BPG Arial';
     color: #B1B1B1;
     font-size: 14px;
-    line-height: 19px;
-    
+    line-height: 19px;    
   }
+  @media (max-width:600px) {
+    .footer-div-1 p {
+      margin-bottom: 20px;
+    }
+  }
+
 
   .useful-links {
     max-width: 110px;
     width: 100%;
+  }
+  @media (max-width:600px) {
+    .useful-links h3{
+      margin-bottom: 20px;
+    }
   }
   .useful-links a {
     font-family:'BPG Arial';

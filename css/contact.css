@@ -180,6 +180,12 @@ li{
     font-size: 5px;
     height: auto;
   }
+  .useful-links h3{
+    margin-top: 20px;
+  }
+  .fa-solid , .fa-facebook , .fa-instagram{
+    font-size: 20px;
+  }
   .privacy {
     margin-top: 20px;
   }
