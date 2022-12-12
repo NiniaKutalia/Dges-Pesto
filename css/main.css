@@ -209,6 +209,13 @@ li{
   max-width: 1480px;
   width: 100%;
   margin: 0 auto;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+@media (max-width:600px) {
+  .pesto_form{
+    flex-direction: column;
+  }
 }
 .pesto_form p {
   margin-bottom: 20px;
@@ -220,15 +227,16 @@ li{
   cursor: pointer;
   margin-top: 20px;
   font-size: 20px;
-  color: white;
   font-family: 'BPG Arial';
-  background-color: green;
-  color: white;
-  border-radius: 10px;
-  border: none;
+  border: #0A7348 2px solid;
+  border-radius: 5px;
+  background-color: white;
+  padding: 5px;
+  color: gray;
 }
 .pesto_form button:hover{
-  color: black;
+  background-color: #0A7348;
+  color: white;
 }
 @media (max-width:700px) {
   .pesto_form {
