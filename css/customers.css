@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 body{
   margin: 0;
   cursor: default;
@@ -12,22 +19,34 @@ a{
 
 header {
   background-color: #fff;
-  box-shadow: 1px 1px 4px 0 #0A7348;
+  -webkit-box-shadow: 1px 1px 4px 0 #0A7348;
+          box-shadow: 1px 1px 4px 0 #0A7348;
   position: fixed;
   width: 100%;  
   z-index: 999;
   height: 90px;
   left: 0;
   top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin: auto;
-  justify-content: space-around;
-  align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .navigacia {
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin: 0 40px;
   max-width: 1400px;
   width: 100%;
@@ -38,17 +57,29 @@ li{
 }
 .navbar {
   min-height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 0 24px;
   max-width: 1400px;
   width: 100%;
 }
 .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 60px;
 }
 .logo {
@@ -59,6 +90,8 @@ li{
   cursor: pointer;
   font-family: BPG Arial;
   font-size: 16px;
+  -webkit-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
   transition: 0.5s ease;
   position: relative;
 }
@@ -73,6 +106,8 @@ li{
   width: 0;
   left: 0;
   bottom: -8px;
+  -webkit-transition: 0.3s linear;
+  -o-transition: 0.3s linear;
   transition: 0.3s linear;
 }
 .nav-link:hover::after{
@@ -90,6 +125,7 @@ li{
   height: 3px;
   margin: 5px auto;
   -webkit-transition: all 0.3 ease-in-out;
+  -o-transition: all 0.3 ease-in-out;
   transition: all 0.3 ease-in-out;
   background-color: rgb(108, 0, 0);
 }
@@ -101,20 +137,29 @@ li{
     opacity: 0;
   }
   .hamburger.active .bar:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
+    -webkit-transform: translateY(8px) rotate(45deg);
+        -ms-transform: translateY(8px) rotate(45deg);
+            transform: translateY(8px) rotate(45deg);
   }
   .hamburger.active .bar:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg);
+    -webkit-transform: translateY(-8px) rotate(-45deg);
+        -ms-transform: translateY(-8px) rotate(-45deg);
+            transform: translateY(-8px) rotate(-45deg);
   }
   .menu {
   position: fixed;
   left: -100%;
   top: 70px;
   gap: 0;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   background-color: #0A7348;
   width: 100%;
   text-align: center;
+  -webkit-transition: 0.3 s;
+  -o-transition: 0.3 s;
   transition: 0.3 s;
   }
   .nav-item {
@@ -132,14 +177,21 @@ li{
 #ul-list{
     overflow: hidden;
     margin-top: 120px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     color: rgb(244, 94, 0);
     font-size: 15px;
     font-family: 'BPG Nino Mtavruli';
     font-weight: bold;
-    align-items: center;
-   justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+   -webkit-box-pack: center;
+       -ms-flex-pack: center;
+           justify-content: center;
   
 }
 .our-customers {
@@ -148,14 +200,23 @@ li{
   width: 100%;
   overflow: hidden;
   margin: 0 auto;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 @media (mac-width:400px) {
   .ul-list {
-   align-items: center;
-   justify-content: center;
+   -webkit-box-align: center;
+       -ms-flex-align: center;
+           align-items: center;
+   -webkit-box-pack: center;
+       -ms-flex-pack: center;
+           justify-content: center;
     
   }
 }
@@ -183,8 +244,12 @@ li{
   max-width: 200px;
   width: 100%;
   margin: 0 auto;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 #loadNext {
   margin-left: 30px;
@@ -192,24 +257,39 @@ li{
 
 /* FOOTER */
 .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     width: 100%;
     background-color: #121212;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin: 0 auto;
   }
   .footer-wraper {
     margin: 0 auto;
     max-width: 1480px;
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-content: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-line-pack: center;
+        align-content: center;
     margin-top: 90px;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .footer-div-1 {
     max-width: 280px;

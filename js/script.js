@@ -10,3 +10,8 @@ hamburger.addEventListener("click", () => {
 })
 
 
+document.querySelector('button').addEventListener('click', function() {
+    let result = document.getElementById('result')
+    result.value = document.querySelector('[name="x"]:checked').value
+  })
+
